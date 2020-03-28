@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -13,11 +12,11 @@ function App() {
   }
   useEffect(() => {
     fetchAdvice()
-  }, [''])
+  }, [])
   return (
     <div className="app">
-        <div className="card">
-          <h1 className="heading">{advice}</h1>
+        <div className="card col-10 col-md-6 d-flex justify-content-center">
+          <h2 className="heading">{advice}</h2>
           <button className="button learn-more" onClick={()=>fetchAdvice()}>
             <span>GIVE ME ADVICE!</span>
           </button>
@@ -27,3 +26,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

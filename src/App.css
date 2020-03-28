@@ -18,8 +18,8 @@
 
 .card {
   background: whitesmoke;
-  width: 40%;
   max-height: 70%;
+  min-height: 70%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   min-height: 40vh;
+  margin-bottom: 10px;
 }
 
 .learn-more {
